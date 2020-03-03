@@ -1,19 +1,22 @@
+page = Page.new
+
 Dado("que estou na home page do site") do
-    
-  end
+    page.validPage
+end
   
 Quando("adiciono um checkbox") do
-    
-  end
+    page.addCheckbox
+end
   
 Então("devo visualizar o checkbox adicionado na página") do
-    
-  end
+    page.addCheckbox.checked?
+end
   
 Quando("removo um checkbox") do
-    
-  end
+    page.addCheckbox
+    page.removeCheckbox
+end
   
 Então("devo visualizar a pagina com o checkbox removido") do
-    
-  end
+    page.addCheckbox.checked? == false
+end

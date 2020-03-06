@@ -1,6 +1,5 @@
 #language: pt
 
-
 Funcionalidade: Incluir e validar a adição de um checkbox
     Eu como QA quero incluir um checkbox no site para validar o teste. 
 

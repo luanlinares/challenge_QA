@@ -6,7 +6,7 @@ class NovaAba
     end
 
     def click_link
-        find("#content > div > a").click
+        find('#content > div > a').click
     end
 
     def valid_newpage

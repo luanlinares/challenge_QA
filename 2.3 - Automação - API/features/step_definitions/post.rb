@@ -1,11 +1,11 @@
 Dado("que estou validando o campo body da API JsonPlaceHolder") do
     page = Apipost.new
-    @resultado = page.api_post
-    puts @resultado
+    @retorno = page.api_post
+    puts @retorno
 end
   
 Então("a API deve retornar o codigo {int}") do |int|
-    expect(@resultado.code).to eq   201
-    puts "Código de retorno é #{@resultado.code}"
-    expect(@resultado["body"]).to eq "teste creditas"
+    expect(@retorno.code).to eq   201
+    puts "O código de retorno é: #{@retorno.code}"
+    expect(@retorno["body"]).to eq 'challenge creditas 2020'
 end
